@@ -13,7 +13,7 @@ server.get('/trilhas', (req,res) => {
 server.post('/cadastro', (req, res) => {
     const { nomeTrilha, cidade, estado, duracao, trajeto, dificuldade, tipo, nomeUsuario, UrlImage } = req.body;
     
-    if (!nomeTrilha || !cidade || !estado || !duracao || !trajeto || !dificuldade || !tipo || !nomeUsuario || !UrlImage) {
+    if (!nomeTrilha || !cidade || !estado || !duracao || !trajeto || !dificuldade || !tipo || !UrlImage) {
         return res.status(400).json({ error: 'Há campos não preenchidos.' });
     }
 
