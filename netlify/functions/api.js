@@ -35,7 +35,7 @@ const corsOptions = {
   credentials: false,
   optionSuccessStatus: 200
 }
-app.use(cors(corsOptions));
+api.use(cors(corsOptions));
 api.use("/api/", router);
 
 export const handler = serverless(api);
