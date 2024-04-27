@@ -22,7 +22,7 @@ router.post('/cadastro', (req, res) => {
   }
 
   const novaTrilha = req.body;
-  fetch('http://localhost:8888/trilhas', {
+  fetch('https://trilhas-api.netlify.app/trilhas', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
