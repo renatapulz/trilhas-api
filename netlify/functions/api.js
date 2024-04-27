@@ -36,6 +36,7 @@ const corsOptions = {
   optionSuccessStatus: 200
 }
 api.use(cors(corsOptions));
+api.use(express.json());
 api.use("/api/", router);
 
 export const handler = serverless(api);
