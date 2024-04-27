@@ -1,4 +1,4 @@
-import express, { Router } from "express";
+import express, { Router, response } from "express";
 import serverless from "serverless-http";
 
 const cors = require('cors');
@@ -6,10 +6,12 @@ const fs = require('fs');
 const api = express();
 const router = Router();
 
-const trilhas = require('public/trilhas.json');
-
 router.get('/trilhas', (req, res) => {
-  return res.json({trilhas})
+  fetch('https://trilhas-api.netlify.app/trilhas')
+    .then(response => response.json())
+    .then(response => {
+      return res.json(response)
+    });
 });
 
 router.post('/cadastro', (req, res) => {
@@ -20,14 +22,17 @@ router.post('/cadastro', (req, res) => {
   }
 
   const novaTrilha = req.body;
-  trilhas.push(novaTrilha);
-
-  fs.writeFile('public/trilhas.json', JSON.stringify(trilhas), (err) => {
-    if (err) {
-      return res.status(500).json({ error: 'Erro ao salvar a trilha recém cadastrada. Error: ' + err });
-    }
-    return res.status(201).json({ message: 'Trilha adicionada com sucesso!', trilhas });
-  });
+  fetch('http://localhost:8888/trilhas', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(novaTrilha)
+    })
+    .then(response => response.json())
+    .then(response => {
+      return res.json(response)
+    });
 });
 
 const corsOptions = {

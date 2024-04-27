@@ -1,0 +1,57 @@
+[
+  {
+      "nomeTrilha": "Trilha Lagoinha do Leste",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "duracao": 120,
+      "trajeto": 1,
+      "dificuldade": "Alta",
+      "tipo": "trekking",
+      "nomeUsuario": "Renata Pulz",
+      "UrlImage": "https://images.unsplash.com/photo-1601826387819-231bf0c7d477?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+      "nomeTrilha": "Trilha do Saquinho",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "duracao": 40,
+      "trajeto": 2,
+      "dificuldade": "Baixa",
+      "tipo": "caminhada",
+      "nomeUsuario": "Renata Pulz",
+      "UrlImage": "https://images.unsplash.com/photo-1705418260041-4df6b0c9354a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+      "nomeTrilha": "Trilha da Caverna de Pântano do Sul",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "duracao": 60,
+      "trajeto": 3,
+      "dificuldade": "Alta",
+      "tipo": "trekking",
+      "nomeUsuario": "Renata Pulz",
+      "UrlImage": "https://images.unsplash.com/photo-1591460926210-7375db3f39cd?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+      "nomeTrilha": "Piscinas Naturais na Barra da Lagoa",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "duracao": 25,
+      "trajeto": 4,
+      "dificuldade": "Baixa",
+      "tipo": "caminhada",
+      "nomeUsuario": "Renata Pulz",
+      "UrlImage": "https://images.unsplash.com/photo-1697032105602-3386d7406434?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+      "nomeTrilha": "Trilha da Boa Vista",
+      "duracao": 25,
+      "trajeto": 3,
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "nomeUsuario": "Renata Pulz",
+      "dificuldade": "Iniciante",
+      "tipo": "Trilha",
+      "UrlImage": "https://i.pinimg.com/originals/78/88/56/788856cb3a541aaecd73050d90d65bdd.jpg"
+  }
+]
