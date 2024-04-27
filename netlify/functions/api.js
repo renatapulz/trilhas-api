@@ -24,7 +24,7 @@ router.post('/cadastro', (req, res) => {
 
   fs.writeFile('./trilhas.json', JSON.stringify(trilhas), (err) => {
     if (err) {
-      return res.status(500).json({ error: 'Erro ao salvar a trilha recém cadastrada.' });
+      return res.status(500).json({ error: 'Erro ao salvar a trilha recém cadastrada. Error: ' + err });
     }
     return res.status(201).json({ message: 'Trilha adicionada com sucesso!', trilhas });
   });
