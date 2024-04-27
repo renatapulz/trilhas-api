@@ -22,7 +22,7 @@ router.post('/cadastro', (req, res) => {
   const novaTrilha = req.body;
   trilhas.push(novaTrilha);
 
-  fs.writeFile('./src/data/trilhas.json', JSON.stringify(trilhas), (err) => {
+  fs.writeFile('./trilhas.json', JSON.stringify(trilhas), (err) => {
     if (err) {
       return res.status(500).json({ error: 'Erro ao salvar a trilha recém cadastrada.' });
     }
