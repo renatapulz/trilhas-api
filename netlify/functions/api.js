@@ -1,12 +1,14 @@
 import express, { Router } from "express";
 import serverless from "serverless-http";
 
+const path = require("path");
 const cors = require('cors');
 const fs = require('fs');
 const api = express();
 const router = Router();
 
-const trilhas = require('./trilhas.json');
+const filesDirectory = path.join(process.cwd());
+const trilhas = require(`${filesDirectory}/trilhas.json`);
 
 router.get('/trilhas', (req, res) => {
   return res.json({trilhas})
@@ -22,7 +24,7 @@ router.post('/cadastro', (req, res) => {
   const novaTrilha = req.body;
   trilhas.push(novaTrilha);
 
-  fs.writeFile('./trilhas.json', JSON.stringify(trilhas), (err) => {
+  fs.writeFile(`${filesDirectory}/trilhas.json`, JSON.stringify(trilhas), (err) => {
     if (err) {
       return res.status(500).json({ error: 'Erro ao salvar a trilha recém cadastrada. Error: ' + err });
     }
