@@ -9,6 +9,4 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Access-Control-Allow-origin = "*"
-    Access-Control-Allow-Methods = "*"
-    Access-Control-Allow-Headers = "*"
+    access-control-allow-origin = "*"
